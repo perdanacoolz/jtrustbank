@@ -1,0 +1,94 @@
+﻿@model WebApplication2.Models.Registrasi
+<div class="row">
+    <div class="col-md-12">
+        <form method="post" action="@Url.Action("Post", "Informasi")">
+            <div class="form-group">
+                <label>RegID</label>
+                <input type="text" class="form-control" name="RegID" required>
+            </div>
+            <div class="form-group">
+                <label>NoAplikasi</label>
+                <input type="text" class="form-control" name="NoAplikasi" required>
+            </div>
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" name="Nama" required>
+            </div>
+            <div class="form-group">
+                <label>TempatLahir</label>
+                <input type="text" class="form-control" name="TempatLahir" required>
+            </div>
+            <div class="form-group">
+                <label>TglLahir</label>
+                <input type="text" class="form-control" name="TglLahir" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jenkel</label>
+                <input type="text" class="form-control" name="Jenkel" required>
+            </div>
+
+            <div class="form-group">
+                <label>KodePos</label>
+                <input type="text" class="form-control" name="KodePos" required>
+            </div>
+
+
+            <div class="form-group">
+                <label>Almt</label>
+                <input type="text" class="form-control" name="Almt" required>
+            </div>
+
+            <div class="form-group">
+                <label>Umur Pemohon</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">56 - 65 Tahun</option>
+                    <option value="2"> 21 - 30 Tahun</option>
+                    <option value="3">31 - 45 Tahun</option>
+                    <option value="3">46 - 55 Tahun</option>
+                </select>
+            </div>
+            <br><br />
+            <div class="form-group">
+                <label>Umur Pemohon + Tenor</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Diatas Ketentuan</option>
+                    <option value="2"> Dibawah Ketentuan</option>
+                    
+                </select>
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Status Perkawinan</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Belum Kawin dengan > 2 tanggungan</option>
+                    <option value="2"> Belum Kawin dengan <= 2 tanggungan</option>
+                    <option value="3"> Belum Kawin dengan 0 tanggungan</option>
+                    <option value="4"> Kawin dengan > 2 tanggungan</option>
+                    <option value="5"> Kawin dengan <= 2 tanggungan</option>
+
+                </select>
+            </div><br />
+
+
+            <div class="form-group">
+                <label>Pendidikan</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">SMA atau dibawahnya</option>
+                    <option value="2"> D1, D2, D3, D4</option>
+                    <option value="3"> S1</option>
+                    <option value="4"> Master atau diatasnya (S2, S3)</option>
+                  
+
+                </select>
+            </div>
+
+            <button class="btn btn-success" type="submit">Add registasi</button>
+        </form>
+    </div>
+</div>
